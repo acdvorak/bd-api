@@ -2,10 +2,17 @@
 
 Simple JSON REST API front-end for [Cinema Squid](http://www.cinemasquid.com/), written in Node.js.
 
-## Running
+## Setup
 
 ```bash
-npm install
+git clone https://github.com/acdvorak/bd-api.git
+cd bd-api
+npm install  # install required dependencies
+```
+
+### Running
+
+```bash
 node app
 ```
 
