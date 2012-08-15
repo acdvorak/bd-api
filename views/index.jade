@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}!
+
+  h2 API
+  h3 Examples
+
+  h4 Successful Queries
+  ol#success-examples
+    each example, i in examples.success
+      li
+        a(href=example.url) #{example.title}
+
+  h4 Invalid Queries
+  ol#error-examples
+    each example, i in examples.error
+      li
+        a(href=example.url) #{example.title}
+        | : #{example.reason}
+
+  h2 Credit
+  p
+    | Data provided by &nbsp;
+    a(href='http://www.cinemasquid.com/', target='_blank') Cinema Squid Blu-ray Movie Database
