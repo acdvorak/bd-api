@@ -13,7 +13,9 @@ node app
 
 Currently, only one API function is available:
 
-```/api/v1/mpls?query=QUERY&mpls=SIZE1&mpls=SIZE2&mpls=...```.
+```
+/api/v1/mpls?query=QUERY&mpls=SIZE1&mpls=SIZE2&mpls=...
+```
 
 Where ```query``` is the name of the movie you wish to find, and ```mpls``` is
 the track size in bytes of each .mpls file you wish to consider.
