@@ -8,7 +8,7 @@ mkdir -p logs run
 
 if [ "$1" = 'stop' ]; then
     "$forever" stop "$script"
-    rm "$pidfile"
+    rm -f "$pidfile"
 else
     "$forever" \
         -a \
