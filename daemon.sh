@@ -7,6 +7,9 @@ pidfile=run/daemon.pid
 mkdir -p logs run
 
 if [ "$1" = 'stop' ]; then
+    "$forever" stop "$script"
+    rm "$pidfile"
+else
     "$forever" \
         -a \
         -l logs/forever.log \
@@ -15,7 +18,4 @@ if [ "$1" = 'stop' ]; then
         --spinSleepTime 60000 \
         --pidFile "$pidfile" \
         start "$script"
-else
-    "$forever" stop "$script"
-    rm "$pidfile"
 fi
