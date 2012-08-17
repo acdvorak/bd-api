@@ -29,7 +29,7 @@ exports.mpls = function(req, res) {
         };
 
         if ( success ) {
-            json['mainMplsFileSize'] = mainMplsFileSize;
+            json['mainMplsFileSize'] = parseInt(mainMplsFileSize);
         }
 
         try {
