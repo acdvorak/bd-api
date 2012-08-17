@@ -1,5 +1,7 @@
 *.bak
 *.iml
+*.pid
 /.idea
 /node_modules
 /logs
+/run
