@@ -1,9 +1,21 @@
 #!/bin/bash
 
-node_modules/forever/bin/forever \
-    -a \
-    -l logs/forever.log \
-    -o logs/out.log \
-    -e logs/error.log \
-    --spinSleepTime 60000 \
-    start app.js
+forever=node_modules/forever/bin/forever
+script=app.js
+pidfile=run/daemon.pid
+
+mkdir -p logs run
+
+if [ "$1" = 'stop' ]; then
+    "$forever" \
+        -a \
+        -l logs/forever.log \
+        -o logs/out.log \
+        -e logs/error.log \
+        --spinSleepTime 60000 \
+        --pidFile "$pidfile" \
+        start "$script"
+else
+    "$forever" stop "$script"
+    rm "$pidfile"
+fi
