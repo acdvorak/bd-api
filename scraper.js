@@ -2,7 +2,7 @@
  * RUN THIS ON www.cinemasquid.com
  */
 
-var $ = require('jQuery')
+var $ = require('jquery')
   , jsdom = require('./node_modules/jquery/node_modules/jsdom/lib/jsdom').jsdom
 //  , jQuery  = $.create()
 //  , document = jsdom("<html><head></head><body>hello world</body></html>")
