@@ -2,9 +2,9 @@
 
 forever=node_modules/forever/bin/forever
 script=app.js
-pidfile=run/daemon.pid
+pidfile=bd-api.pid
 
-mkdir -p logs run
+mkdir -p logs
 
 if [ "$1" = 'stop' ]; then
     "$forever" stop "$script"
