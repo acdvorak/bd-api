@@ -10,6 +10,7 @@
     "jade": "*",
     "less-middleware": "*",
     "jquery": "1.7.3",
-    "forever": "0.10.0"
+    "forever": "0.10.0",
+    "mongodb": "1.1.4"
   }
 }

@@ -1,0 +1,74 @@
+{
+	"releases": [
+		{
+			"title": "The Lord of the Rings: The Motion Picture Trilogy (Extended Edition)",
+			"country": "US",
+			"language": "EN",
+			"is_theatrical": false,
+			"is_special": false,
+			"is_extended": true,
+			"is_collector": false,
+			"is_unrated": false,
+			"num_discs": 15,
+			"ean": "0794043140617",
+			
+			"titles": [
+				{
+					"tmdb_id": 120,
+					"title": "The Lord of the Rings: The Fellowship of the Ring",
+					"year": 2001,
+					"num_discs": 2,
+					
+					"discs": [
+						{
+							"volume_label": "FELLOWSHIP_OF_THE_RING_EXT_PT1",
+							"name": "THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING (EXT.) PT. 1",
+							"bd_org_id": "0x7fff8123",
+							"bd_disc_id": "0x426158460ce94ee1953365cb37c48903",
+							
+							"playlists": [
+								{
+									"filename": "00100.MPLS",
+									"filesize": 30315147264,
+									"length": 6343420,
+									"length_human": "1:45:43.420",
+									"language": "EN",
+									"is_main": true,
+									"is_bonus": false,
+									"is_theatrical": false,
+									"is_special": false,
+									"is_extended": true,
+									"is_commentary": false,
+									"is_unrated": false
+								}
+							]
+						},
+						{
+							"volume_label": "FELLOWSHIP_OF_THE_RING_EXT_PT2",
+							"name": "THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING (EXT.) PT. 2",
+							"bd_org_id": "0x7fff8123",
+							"bd_disc_id": "0x27cd19879a7b47868d7e2777f445da2d",
+							
+							"playlists": [
+								{
+									"filename": "00100.MPLS",
+									"filesize": 35118809088,
+									"length": 7354347,
+									"length_human": "2:02:34.347",
+									"language": "EN",
+									"is_main": true,
+									"is_bonus": false,
+									"is_theatrical": false,
+									"is_special": false,
+									"is_extended": true,
+									"is_commentary": false,
+									"is_unrated": false
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
