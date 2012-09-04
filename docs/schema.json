@@ -1,74 +1,427 @@
 {
-	"releases": [
-		{
-			"title": "The Lord of the Rings: The Motion Picture Trilogy (Extended Edition)",
-			"country": "US",
-			"language": "EN",
-			"is_theatrical": false,
-			"is_special": false,
-			"is_extended": true,
-			"is_collector": false,
-			"is_unrated": false,
-			"num_discs": 15,
-			"ean": "0794043140617",
-			
-			"titles": [
-				{
-					"tmdb_id": 120,
-					"title": "The Lord of the Rings: The Fellowship of the Ring",
-					"year": 2001,
-					"num_discs": 2,
-					
-					"discs": [
-						{
-							"volume_label": "FELLOWSHIP_OF_THE_RING_EXT_PT1",
-							"name": "THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING (EXT.) PT. 1",
-							"bd_org_id": "0x7fff8123",
-							"bd_disc_id": "0x426158460ce94ee1953365cb37c48903",
-							
-							"playlists": [
-								{
-									"filename": "00100.MPLS",
-									"filesize": 30315147264,
-									"length": 6343420,
-									"length_human": "1:45:43.420",
-									"language": "EN",
-									"is_main": true,
-									"is_bonus": false,
-									"is_theatrical": false,
-									"is_special": false,
-									"is_extended": true,
-									"is_commentary": false,
-									"is_unrated": false
-								}
-							]
-						},
-						{
-							"volume_label": "FELLOWSHIP_OF_THE_RING_EXT_PT2",
-							"name": "THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING (EXT.) PT. 2",
-							"bd_org_id": "0x7fff8123",
-							"bd_disc_id": "0x27cd19879a7b47868d7e2777f445da2d",
-							
-							"playlists": [
-								{
-									"filename": "00100.MPLS",
-									"filesize": 35118809088,
-									"length": 7354347,
-									"length_human": "2:02:34.347",
-									"language": "EN",
-									"is_main": true,
-									"is_bonus": false,
-									"is_theatrical": false,
-									"is_special": false,
-									"is_extended": true,
-									"is_commentary": false,
-									"is_unrated": false
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+    "discs":[
+        {
+            "disc_name":"Beauty and the Beast (Disc 1) - Blu-ray™",
+            "volume_label":"BEAUTYANDTHEBEAST",
+            "ISO_639_2":"eng",
+            "tmdb_id":10020,
+            "movie_title":"Beauty and the Beast",
+            "year":1991,
+            "playlists":[
+                {
+                    "filename":"00801.MPLS",
+                    "filesize":24602523648,
+                    "length_sec":5504,
+                    "length_ms":5504.8743111111116,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":false,
+                    "is_special":false,
+                    "is_extended":true,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00803.MPLS",
+                    "filesize":24602523648,
+                    "length_sec":5504,
+                    "length_ms":5504.8743111111116,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":false,
+                    "is_special":false,
+                    "is_extended":true,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00800.MPLS",
+                    "filesize":23040276480,
+                    "length_sec":5094,
+                    "length_ms":5094.5060222222219,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00802.MPLS",
+                    "filesize":23040276480,
+                    "length_sec":5094,
+                    "length_ms":5094.5060222222219,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"Doom",
+            "volume_label":"DOOM",
+            "ISO_639_2":"eng",
+            "tmdb_id":8814,
+            "movie_title":"Doom",
+            "year":2005,
+            "playlists":[
+                {
+                    "filename":"00000.MPLS",
+                    "filesize":23571290112,
+                    "length_sec":6764,
+                    "length_ms":6764.758,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00001.MPLS",
+                    "filesize":23571290112,
+                    "length_sec":6764,
+                    "length_ms":6764.758,
+                    "ISO_639_2":"eng",
+                    "is_main":false,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING (EXT.) PT. 1",
+            "volume_label":"FELLOWSHIP_OF_THE_RING_EXT_PT1",
+            "ISO_639_2":"eng",
+            "tmdb_id":120,
+            "movie_title":"The Lord of the Rings: The Fellowship of the Ring",
+            "year":2001,
+            "playlists":[
+                {
+                    "filename":"00100.MPLS",
+                    "filesize":30315147264,
+                    "length_sec":6343,
+                    "length_ms":6343.4204000000009,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":false,
+                    "is_special":false,
+                    "is_extended":true,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING (EXT.) PT. 2",
+            "volume_label":"FELLOWSHIP_OF_THE_RING_EXT_PT2",
+            "ISO_639_2":"eng",
+            "tmdb_id":120,
+            "movie_title":"The Lord of the Rings: The Fellowship of the Ring",
+            "year":2001,
+            "playlists":[
+                {
+                    "filename":"00100.MPLS",
+                    "filesize":35118809088,
+                    "length_sec":7354,
+                    "length_ms":7354.347,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":false,
+                    "is_special":false,
+                    "is_extended":true,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"The Incredibles (Disc 1) - Blu-ray™",
+            "volume_label":"INCREDIBLES",
+            "ISO_639_2":"eng",
+            "tmdb_id":9806,
+            "movie_title":"The Incredibles",
+            "year":2004,
+            "playlists":[
+                {
+                    "filename":"00800.MPLS",
+                    "filesize":29893386240,
+                    "length_sec":6925,
+                    "length_ms":6925.8353777777784,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00801.MPLS",
+                    "filesize":29871783936,
+                    "length_sec":6925,
+                    "length_ms":6925.8353777777784,
+                    "ISO_639_2":"fra",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00802.MPLS",
+                    "filesize":29871513600,
+                    "length_sec":6925,
+                    "length_ms":6925.8353777777784,
+                    "ISO_639_2":"spa",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00893.MPLS",
+                    "filesize":29893386240,
+                    "length_sec":6925,
+                    "length_ms":6925.8353777777784,
+                    "ISO_639_2":"eng",
+                    "is_main":false,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"The Mummy Returns",
+            "volume_label":"MUMMY_RETURNS",
+            "ISO_639_2":"eng",
+            "tmdb_id":1734,
+            "movie_title":"The Mummy Returns",
+            "year":2001,
+            "playlists":[
+                {
+                    "filename":"00010.MPLS",
+                    "filesize":31311243264,
+                    "length_sec":7778,
+                    "length_ms":7778.3956222222223,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"Avatar",
+            "volume_label":"RED_BIRD_2D_WW",
+            "ISO_639_2":"eng",
+            "tmdb_id":19995,
+            "movie_title":"Avatar",
+            "year":2009,
+            "playlists":[
+                {
+                    "filename":"00802.MPLS",
+                    "filesize":44897476608,
+                    "length_sec":9701,
+                    "length_ms":9701.692,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"Tangled - Blu-ray™",
+            "volume_label":"TANGLED",
+            "ISO_639_2":"eng",
+            "tmdb_id":38757,
+            "movie_title":"Tangled",
+            "year":2010,
+            "playlists":[
+                {
+                    "filename":"00801.MPLS",
+                    "filesize":26974599168,
+                    "length_sec":6057,
+                    "length_ms":6057.2176888888889,
+                    "ISO_639_2":"fra",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00840.MPLS",
+                    "filesize":26974660608,
+                    "length_sec":6057,
+                    "length_ms":6057.2176888888889,
+                    "ISO_639_2":"spa",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00800.MPLS",
+                    "filesize":26810068992,
+                    "length_sec":6017,
+                    "length_ms":6017.177688888889,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00875.MPLS",
+                    "filesize":26810068992,
+                    "length_sec":6017,
+                    "length_ms":6017.177688888889,
+                    "ISO_639_2":"eng",
+                    "is_main":false,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"THE LORD OF THE RINGS: THE TWO TOWERS (EXT.) PT. 1",
+            "volume_label":"THE_TWO_TOWERS_EXT_PT1",
+            "ISO_639_2":"eng",
+            "tmdb_id":121,
+            "movie_title":"The Lord of the Rings: The Two Towers",
+            "year":2002,
+            "playlists":[
+                {
+                    "filename":"00100.MPLS",
+                    "filesize":30338605056,
+                    "length_sec":6399,
+                    "length_ms":6399.184444444445,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":false,
+                    "is_special":false,
+                    "is_extended":true,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"THE LORD OF THE RINGS: THE TWO TOWERS (EXT.) PT. 2",
+            "volume_label":"THE_TWO_TOWERS_EXT_PT2",
+            "ISO_639_2":"eng",
+            "tmdb_id":121,
+            "movie_title":"The Lord of the Rings: The Two Towers",
+            "year":2002,
+            "playlists":[
+                {
+                    "filename":"00100.MPLS",
+                    "filesize":36776085504,
+                    "length_sec":7731,
+                    "length_ms":7731.2652,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":false,
+                    "is_special":false,
+                    "is_extended":true,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        },
+        {
+            "disc_name":"Toy Story 3 (Disc 1) - Blu-ray™",
+            "volume_label":"TOY_STORY_3_DISC_1",
+            "ISO_639_2":"eng",
+            "tmdb_id":10193,
+            "movie_title":"Toy Story 3",
+            "year":2010,
+            "playlists":[
+                {
+                    "filename":"00801.MPLS",
+                    "filesize":29342251008,
+                    "length_sec":6183,
+                    "length_ms":6183.3850222222227,
+                    "ISO_639_2":"fra",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00802.MPLS",
+                    "filesize":29334939648,
+                    "length_sec":6183,
+                    "length_ms":6183.3850222222227,
+                    "ISO_639_2":"spa",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00800.MPLS",
+                    "filesize":29391126528,
+                    "length_sec":6153,
+                    "length_ms":6153.3550222222229,
+                    "ISO_639_2":"eng",
+                    "is_main":true,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                },
+                {
+                    "filename":"00803.MPLS",
+                    "filesize":29391126528,
+                    "length_sec":6153,
+                    "length_ms":6153.3550222222229,
+                    "ISO_639_2":"eng",
+                    "is_main":false,
+                    "is_theatrical":true,
+                    "is_special":false,
+                    "is_extended":false,
+                    "is_unrated":false,
+                    "has_commentary":false
+                }
+            ]
+        }
+
+    ]
 }

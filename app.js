@@ -32,6 +32,7 @@ app.get('/', routes.index);
 app.get('/api/v1', routes.index);
 app.get('/api/v1/cinemasquid/mpls', require('./routes/cinemasquid').mpls);
 app.get('/api/v1/mainMovie', require('./routes/mainMovie').mainMovie);
+app.get('/api/v1/init', require('./routes/mainMovie').init);
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log("Express server listening on port " + app.get('port'));
