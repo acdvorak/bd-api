@@ -33,7 +33,7 @@ exports.mainMovie = function(req, res) {
         };
 
         if ( success ) {
-            json['result'] = result;
+            json['discs'] = result;
         }
 
         try {
