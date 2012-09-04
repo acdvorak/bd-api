@@ -10,7 +10,7 @@ var schema = require('../docs/schema.json');
  * GET main .mpls file for requested movie and mpls track sizes in bytes
  */
 
-exports.mainMovie = function(req, res) {
+exports.findMainMovie = function(req, res) {
     var timeout = setTimeout(function() {
         sendResponse(res, false, null, [
             { 'textStatus': 'timeout',
@@ -49,6 +49,51 @@ exports.mainMovie = function(req, res) {
     console.log(params);
 
     DBQuery.query(params, function(err, results) {
+        if ( err ) {
+            sendResponse(res, false, results, [ { 'textStatus': err } ]);
+        } else {
+            sendResponse(res, true, results);
+        }
+    });
+};
+
+exports.newMainMovie = function(req, res) {
+    var timeout = setTimeout(function() {
+        sendResponse(res, false, null, [
+            { 'textStatus': 'timeout',
+              'errorMessage': 'operation timed out' }
+        ]);
+    }, 60000);
+
+    function sendResponse(res, success, result, errors) {
+        if ( timeout ) {
+            clearTimeout(timeout);
+            timeout = null;
+        } else {
+            return;
+        }
+
+        var json = {
+            'success': success,
+            'error': !success,
+            'errors': errors || []
+        };
+
+        try {
+            res.send(json);
+            res.end();
+        } catch(e) {
+            console.error(e);
+        }
+    }
+
+    var search = url.parse(req.url).search || '';
+    var params = qs.parse(search.replace(/^\?/, ''));
+    var body = req.body;
+
+    console.log(params);
+
+    DBQuery.post(params, body, function(err, results) {
         if ( err ) {
             sendResponse(res, false, results, [ { 'textStatus': err } ]);
         } else {
