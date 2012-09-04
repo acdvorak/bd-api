@@ -58,6 +58,14 @@ exports.findMainMovie = function(req, res) {
 };
 
 exports.newMainMovie = function(req, res) {
+    console.log('~~~~~~~~~~~~~~~~~~');
+    console.log('');
+    console.log('POST body: ', req.body);
+    console.log('');
+    console.log('Request: ', req);
+    console.log('');
+    console.log('~~~~~~~~~~~~~~~~~~');
+
     var timeout = setTimeout(function() {
         sendResponse(res, false, null, [
             { 'textStatus': 'timeout',
@@ -91,7 +99,8 @@ exports.newMainMovie = function(req, res) {
     var params = qs.parse(search.replace(/^\?/, ''));
     var body = req.body;
 
-    console.log(params);
+    console.log('Params: ', params);
+    console.log('JSON: ', params.json ? JSON.parse(params.json) : '');
 
     DBQuery.post(params, body, function(err, results) {
         if ( err ) {
