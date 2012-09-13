@@ -48,7 +48,7 @@ exports.findMainMovie = function(req, res) {
 
     console.log(params);
 
-    DBQuery.query(params, function(err, results) {
+    DBQuery.query(req, params, function(err, results) {
         if ( err ) {
             sendResponse(res, false, results, [ { 'textStatus': err } ]);
         } else {
@@ -102,7 +102,7 @@ exports.newMainMovie = function(req, res) {
     console.log('Params: ', params);
     console.log('JSON: ', params.json ? JSON.parse(params.json) : '');
 
-    DBQuery.post(params, body, function(err, results) {
+    DBQuery.post(req, params, body, function(err, results) {
         if ( err ) {
             sendResponse(res, false, results, [ { 'textStatus': err } ]);
         } else {
