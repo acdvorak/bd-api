@@ -104,7 +104,9 @@ exports.newMainMovie = function(req, res) {
 
     DBQuery.post(req, params, body, function(err, results) {
         if ( err ) {
-            sendResponse(res, false, results, [ { 'textStatus': err } ]);
+            if ( typeof(err) === 'string' )
+                err = { 'textStatus': err };
+            sendResponse(res, false, results, [ err ]);
         } else {
             sendResponse(res, true, results);
         }
